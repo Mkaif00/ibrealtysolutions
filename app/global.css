@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+body {
+    /* Set base styles using the new Tailwind colors/fonts */
+    @apply bg-dark-bg text-text-light font-body tracking-wide overflow-x-hidden;
+}
+
+h1, h2, h3, h4, h5 {
+    @apply font-heading font-bold leading-tight mb-6;
+}
+
+.container {
+    @apply mx-auto px-4 lg:px-8 max-w-7xl;
+}
+
+@layer components {
+    .cta-button {
+        @apply bg-gradient-to-br from-gold to-gold-dark text-dark-bg px-8 py-3 rounded-full font-semibold uppercase tracking-wider transition-all duration-[400] ease-in-out border-none cursor-pointer shadow-lg hover:shadow-gold/50;
+    }
+
+    .btn-outline {
+        @apply bg-transparent border-2 border-gold text-gold px-8 py-3 rounded-full font-semibold uppercase tracking-wider transition-all duration-300 ease-in-out hover:bg-gold hover:text-dark-bg;
+    }
+}
+.heroSlider img {
+    filter: brightness(1);
+    opacity: 1;
+}
