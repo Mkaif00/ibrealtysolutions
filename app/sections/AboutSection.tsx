@@ -81,7 +81,7 @@ export default function AboutSection() {
         </div>
 
         <div className="rounded-2xl overflow-hidden shadow-2xl">
-          <Image src="/image/a1.jpg" alt="About IB Realty" className="w-full h-full object-cover" unoptimized />
+          <Image src="/image/a1.jpg" alt="About IB Realty" width={600} height={600} className="w-full h-auto object-cover" unoptimized />
         </div>
       </div>
     </section>
