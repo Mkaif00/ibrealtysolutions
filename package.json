@@ -3,15 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build",
-    "start": "next start",
-    "lint": "next lint",
-    "db:push": "prisma db push",
-    "db:studio": "prisma studio",
-    "db:generate": "prisma generate",
-    "prebuild": "npm run db:push",
-    "postinstall": "npm run db:generate",
-    "seed:local": "npm run db:push && npm run db:generate && npx prisma db seed"
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
@@ -38,10 +31,6 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.0.3",
-    "prisma": "^5.22.0",
     "typescript": "^5"
-  },
-  "prisma": {
-    "seed": "node prisma/seed.js"
   }
 }
