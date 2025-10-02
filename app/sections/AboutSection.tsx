@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import Image from 'next/image'
 
 export default function AboutSection() {
   const [open, setOpen] = useState(false)
@@ -80,7 +81,7 @@ export default function AboutSection() {
         </div>
 
         <div className="rounded-2xl overflow-hidden shadow-2xl">
-          <img src="/image/a1.jpg" alt="About IB Realty" className="w-full h-full object-cover" />
+          <Image src="/image/a1.jpg" alt="About IB Realty" className="w-full h-full object-cover" />
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination } from 'swiper/modules'
 import 'swiper/css'
@@ -22,7 +23,7 @@ export default function HeroSlider({ slides }: { slides: Slide[] }) {
         {slides.map((s, i) => (
           <SwiperSlide key={i}>
             <div className="relative w-full h-full">
-              <img src={s.image} alt={s.title} className="w-full h-full object-cover" />
+              <Image src={s.image} alt={s.title} className="w-full h-full object-cover" priority={i===0} />
               <div className="absolute inset-0" />
               <div className="relative container h-full flex items-center z-10">
                 <div className="max-w-3xl">
