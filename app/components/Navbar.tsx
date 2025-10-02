@@ -20,7 +20,7 @@ export default function Navbar() {
         <span className="text-dark-bg font-bold text-xl font-heading">IB</span>
       </div>
       <h1 className="text-2xl font-heading bg-gradient-to-r from-gold to-gold-light bg-clip-text text-transparent tracking-wide mb-0">
-        IB Realty Solutions
+        IB Realty Solutions Pvt.Ltd.
       </h1>
     </div>
   )

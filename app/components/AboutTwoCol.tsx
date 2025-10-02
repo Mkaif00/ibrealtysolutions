@@ -2,9 +2,9 @@ export default function AboutTwoCol() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <div>
-        <h2 className="text-4xl font-bold mb-6">About IB Realty Solutions</h2>
+        <h2 className="text-4xl font-bold mb-6">About IB Realty Solutions Pvt.Ltd.</h2>
         <p className="text-lg mb-4">
-          With over 15 years of experience in real estate, IB Realty Solutions 
+          With over 15 years of experience in real estate, IB Realty Solutions Pvt.Ltd. 
           provides premium property investments with guaranteed returns.
         </p>
         <p className="text-lg">
