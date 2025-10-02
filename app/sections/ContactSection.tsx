@@ -40,7 +40,7 @@ export default function ContactSection() {
                         <ContactItem 
                             Icon={Phone}
                             title="Phone"
-                            content="(+91) 98765 43210"
+                            content="(+91) 9891027442"
                         />
                         <ContactItem 
                             Icon={Mail}

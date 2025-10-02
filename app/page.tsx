@@ -8,10 +8,10 @@ import PlotGallerySection from './sections/ProjectGallerySection'
 
 // Use the imported Slide interface for type safety
 const heroSlides: Slide[] = [
-  { image: 'image/hero1.jpg', title: 'Premium Plots in Prime Locations', subtitle: 'Your dream property awaits' },
-  { image: 'image/hero2.jpg', title: 'Investment Opportunities', subtitle: 'Grow your wealth with real estate' },
-  { image: 'image/hero3.jpg', title: 'Trusted Land Acquisition Experts', subtitle: 'Decades of experience at your service' },
-  { image: 'image/hero4.jpg', title: 'Exclusive Gated Communities', subtitle: 'We build your dream here' }
+  { image: '/image/hero1.jpg', title: 'Premium Plots in Prime Locations', subtitle: 'Your dream property awaits' },
+  { image: '/image/hero2.jpg', title: 'Investment Opportunities', subtitle: 'Grow your wealth with real estate' },
+  { image: '/image/hero3.jpg', title: 'Trusted Land Acquisition Experts', subtitle: 'Decades of experience at your service' },
+  { image: '/image/hero4.jpg', title: 'Exclusive Gated Communities', subtitle: 'We build your dream here' }
 ]
 
 

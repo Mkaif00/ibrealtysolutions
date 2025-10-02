@@ -19,9 +19,9 @@ interface ProjectsGridProps {
 }
 
 const projects: Project[] = [
-    { id: '1', title: 'Prime Residential Plot - Ghaziabad', location: 'Jewar International Airport, Noida', heroImage: '/project/image/project1.jpg', price: 2500000, badges: ['Residential', 'For Sale'], size: '10 Hectares', type: 'Residential', status: 'For Sale' },
-    { id: '2', title: 'Strategic Commercial Plot - Ghaziabad', location: 'Gurugram', heroImage: '/project/image/project2.jpg', price: 3500000, badges: ['Commercial', 'Strategic'], size: '50 Hectares', type: 'Commercial', status: 'For Sale' },
-    { id: '3', title: 'High-Growth Investment Plot - Ghaziabad', location: 'Ghaziabad', heroImage: '/project/image/project3.jpg', price: 4000000, badges: ['Investment', 'High-Growth'], size: '1 Acre', type: 'Investment', status: 'For Sale' },
+    { id: '1', title: 'Prime Residential Plot - Ghaziabad', location: 'Jewar International Airport, Noida', heroImage: '/image/project1.jpg', price: 2500000, badges: ['Residential', 'For Sale'], size: '10 Hectares', type: 'Residential', status: 'For Sale' },
+    { id: '2', title: 'Strategic Commercial Plot - Ghaziabad', location: 'Gurugram', heroImage: '/image/project2.jpg', price: 3500000, badges: ['Commercial', 'Strategic'], size: '50 Hectares', type: 'Commercial', status: 'For Sale' },
+    { id: '3', title: 'High-Growth Investment Plot - Ghaziabad', location: 'Ghaziabad', heroImage: '/image/project3.jpg', price: 4000000, badges: ['Investment', 'High-Growth'], size: '1 Acre', type: 'Investment', status: 'For Sale' },
 ]
 
 const IconMap: { [key: string]: any } = {

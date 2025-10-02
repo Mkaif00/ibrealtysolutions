@@ -2,12 +2,12 @@ export default function DirectorsSection() {
   const directors = [
     {
       name: 'Iqbal Khan',
-      title: 'Co-Founder & CEO',
+      title: 'Managing Director',
       image: '/image/director-iqbal.jpg',
     },
     {
       name: 'Syed Basit Ali',
-      title: 'Co-Founder & COO',
+      title: 'Managing Director',
       image: '/image/director-basit.jpg',
     },
   ]
