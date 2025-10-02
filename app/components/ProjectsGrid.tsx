@@ -46,7 +46,7 @@ export default function ProjectsGrid({ projects}: ProjectsGridProps) {
                 return (
                     <div key={plot.id} className="bg-card-bg rounded-[15px] overflow-hidden shadow-2xl transition-all duration-400 hover:translate-y-[-10px] hover:shadow-gold/30 group">
                         <div className="h-[300px] relative overflow-hidden">
-                            <Image src={plot.heroImage} alt={plot.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.05]" />
+                            <Image src={plot.heroImage} alt={plot.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.05]" unoptimized />
                             <div className="absolute top-5 right-5 bg-gold text-dark-bg px-4 py-1.5 rounded-full font-semibold text-sm">{plot.status}</div>
                         </div>
                         

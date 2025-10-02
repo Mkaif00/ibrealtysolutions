@@ -23,7 +23,7 @@ export default function HeroSlider({ slides }: { slides: Slide[] }) {
         {slides.map((s, i) => (
           <SwiperSlide key={i}>
             <div className="relative w-full h-full">
-              <Image src={s.image} alt={s.title} className="w-full h-full object-cover" priority={i===0} />
+              <Image src={s.image} alt={s.title} className="w-full h-full object-cover" unoptimized />
               <div className="absolute inset-0" />
               <div className="relative container h-full flex items-center z-10">
                 <div className="max-w-3xl">

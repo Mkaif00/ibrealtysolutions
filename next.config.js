@@ -18,4 +18,8 @@ const nextConfig = {
   skipMiddlewareUrlNormalize: true
 }
 
-module.exports = nextConfig
+module.exports = {
+  images: {
+    unoptimized: true,
+  },
+}
