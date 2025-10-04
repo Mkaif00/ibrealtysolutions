@@ -22,7 +22,7 @@ export default function Navbar() {
           src="image/logo.jpg"
           alt="IB Realty Logo"
           width={100}
-          height={100}
+          height={120}
           className="w-full h-full object-contain"
         />
       </div>
