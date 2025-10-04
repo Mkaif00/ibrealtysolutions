@@ -60,7 +60,7 @@ export default function AboutSection() {
                   </div>
                   <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
                     <div className="bg-card-bg p-6 rounded-lg shadow-lg">
-                      <h3 className="text-3xl font-bold mb-2">2+</h3>
+                      <h3 className="text-3xl font-bold mb-2">4+</h3>
                       <p className="text-lg text-text-gray">Ongoing Projects</p>
                     </div>
                   </div>

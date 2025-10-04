@@ -9,6 +9,9 @@ const plotGallery = [
   { id: 4, image: '/image/plot4.jpg' },
   { id: 5, image: '/image/plot5.jpg' },
   { id: 6, image: '/image/plot6.jpg' },
+  { id: 7, image: '/image/plot7.jpg' },
+  { id: 8, image: '/image/plot8.jpg' },
+  { id: 9, image: '/image/plot9.jpg' },
 ]
 
 export default function PlotGallerySection({ projects }: { projects?: any[] }) {
@@ -20,7 +23,7 @@ export default function PlotGallerySection({ projects }: { projects?: any[] }) {
           {plotGallery.map((item) => (
             <div key={item.id} className="relative h-64">
               {item.image ? (
-                <Image src={item.image} alt={`Plot ${item.id}`} width={600} height={400} layout="fill" objectFit="cover" unoptimized />
+                <Image src={item.image} alt={`Plot ${item.id}`} layout="fill" objectFit="cover" unoptimized />
               ) : (
                 <div className="w-full h-full bg-gray-200" />
               )}

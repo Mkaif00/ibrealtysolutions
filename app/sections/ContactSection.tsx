@@ -33,14 +33,14 @@ export default function ContactSection() {
                             title="Address"
                             content={
                                 <>
-                                    Shop No-3 Basement Abul Fazal Enclave Part-2,<br/>Jamia nagar, Okhla, New Delhi -110025
+                                    G-42, Upper Ground Floor & First Floor, Near Red Tape Showroom<br/>Kalindi Kunj Road, New Delhi -110025
                                 </>
                             }
                         />
                         <ContactItem 
                             Icon={Phone}
                             title="Phone"
-                            content="(+91) 9891027442"
+                            content="(+91) 9891027442, (+91) 7011618123"
                         />
                         <ContactItem 
                             Icon={Mail}

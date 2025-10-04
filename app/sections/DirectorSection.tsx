@@ -5,11 +5,13 @@ export default function DirectorsSection() {
       name: 'Iqbal Khan',
       title: 'Managing Director',
       image: '/image/director-iqbal.jpg',
+      bio: 'Iqbal Khan,Director of IB Realty Solutions Pvt.Ltd. With over 10 Year Experience in real estate devlopment, Iqbal khan brings a visinory approach to creating sustainable and innovative residential and commercial spaces. His leadership has driven the company to new heights of excellence.'
     },
     {
       name: 'Syed Basit Ali',
       title: 'Managing Director',
       image: '/image/director-basit.jpg',
+      bio: 'Basit, the Director of IB Realty Solutions Pvt. Ltd., is driven by a clear vision--to make property investment simple,transparent and rewarding for every client. His focus is on creating lasting realtionships with clients by delivering results with honesty and professionalism.'
     },
   ]
 
@@ -21,13 +23,13 @@ export default function DirectorsSection() {
           {directors.map((d) => (
             <div key={d.name} className="bg-card-bg rounded-2xl p-8 border border-gold-dark/30 shadow-2xl">
               <div className="flex items-center gap-5 mb-4">
-                <Image src={d.image} alt={d.name} className="w-24 h-24 object-cover border-2 border-gold/60" />
+                <Image src={d.image} alt={d.name} width={96} height={96} className="w-24 h-24 object-cover border-2 border-gold/60" />
                 <div>
                   <h3 className="text-xl text-gold">{d.name}</h3>
                   <p className="text-text-gray text-sm">{d.title}</p>
                 </div>
               </div>
-              <p className="text-text-light">{d.name} brings a visionary approach to real estate leadership, focusing on growth, innovation, and client trust.</p>
+              <p className="text-text-light">{d.bio} </p>
             </div>
           ))}
         </div>

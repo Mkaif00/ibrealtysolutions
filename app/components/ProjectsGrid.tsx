@@ -1,3 +1,4 @@
+"use client"
 import { MapPin, Ruler, CheckCircle, LineChart, Building } from 'lucide-react';
 import React from 'react';
 import Link from 'next/link';
@@ -31,7 +32,18 @@ const IconMap: { [key: string]: any } = {
     'size': Ruler
 }
 
-export default function ProjectsGrid({ projects}: ProjectsGridProps) {
+export default function ProjectsGrid({ projects}: ProjectsGridProps) { 
+    const [showPopup, setShowPopup] = React.useState(false);
+
+    const handleViewDetails = (e: React.MouseEvent) => {
+        e.preventDefault();
+        setShowPopup(true);
+    };
+
+    const closePopup = () => {
+        setShowPopup(false);
+    };
+
   return (
     <section id="plots" className="py-20">
         <div className="section-title text-center mb-16 relative">
@@ -46,7 +58,7 @@ export default function ProjectsGrid({ projects}: ProjectsGridProps) {
                 return (
                     <div key={plot.id} className="bg-card-bg rounded-[15px] overflow-hidden shadow-2xl transition-all duration-400 hover:translate-y-[-10px] hover:shadow-gold/30 group">
                         <div className="h-[300px] relative overflow-hidden">
-                            <Image src={plot.heroImage} alt={plot.title} width={800} height={500} className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-[1.05]" unoptimized />
+                            <Image src={plot.heroImage} alt={plot.title} fill className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-[1.05]" unoptimized />
                             <div className="absolute top-5 right-5 bg-gold text-dark-bg px-4 py-1.5 rounded-full font-semibold text-sm">{plot.status}</div>
                         </div>
                         
@@ -69,14 +81,54 @@ export default function ProjectsGrid({ projects}: ProjectsGridProps) {
                                     <span>{plot.type}</span>
                                 </div>
                             </div>
-                            <Link href={`/plots/${plot.id}`} className="cta-button mt-8 w-full">
-                                View Details
-                            </Link>
                         </div>
-                    </div>
-                )
+                        <button
+                            onClick={handleViewDetails}
+                            className="cta-button mt-8 w-full"
+                            >
+                                View Details
+                            </button>
+                        </div>
+                );
             })}
         </div>
+        {/* ADD THIS POPUP AT THE END*/}
+        {showPopup && (
+            <div
+                className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
+                onClick={closePopup}
+            >
+                <div className="bg-cardd-bg rounded-2xl p-8 max-w-md w-full border-2 border-gold shadow-2xl animate-fadeIn"
+                    onClick={(e) => e.stopPropagation()}
+                >
+                    <div className="text-center">
+                        <div className="mb-6">
+                            <svg 
+                                className="w-20 h-20 text-gold mx-auto"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M9 1212 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                />
+                            </svg>
+                        </div>
+                        <h3 className="text-3xl font-bold text-gold mb-4">Project Sold Out</h3>
+                        <p className="text-text-light text-lg mb-8">This project has been successfully sold out. Thank you for your intrest!</p>
+                        <button
+                            onClick={closePopup}
+                            className="bg-gold hover:bg-gold/90 text-dark-bg font-bold py-3 px-10 rounded-lg transition duration-200 text-lg"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        )}
     </section>
-  )
+  );
 }

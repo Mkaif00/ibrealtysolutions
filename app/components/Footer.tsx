@@ -44,7 +44,7 @@ export default function Footer() {
                 </div>
                 
                 <div className="copyright text-center pt-6 border-t border-white/10 text-text-gray text-sm">
-                    <p>&copy; {new Date().getFullYear()} IB Realty Solutions Pvt.Ltd. All rights reserved. | Designed with elegance and precision</p>
+                    <p>&copy; {new Date().getFullYear()} IB Realty Solutions Pvt.Ltd. All rights reserved.</p>
                 </div>
             </div>
         </footer>

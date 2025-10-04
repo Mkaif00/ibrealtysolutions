@@ -9,13 +9,13 @@ export default function ContactForm() {
     name: '',
     email: '',
     phone: '',
-    landType: 'Residential',
+    landType: '',
     message: '',
   });
 
   const [status, setStatus] = useState({ type: '', message: ''});
   const [loading, setLoading] = useState(false);
-  const SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbzDAS7htD26e6DNpoAPhnRkPgFmyWx2itAZ-rCPrIPRRK6jK2yjwopga0dStTvDudlU0w/exec';
+  const SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbxuLcDAUNIFy00uO1Dv6sypTDee1tmOIpab-EpBsdfFnM9GGxDDYCv06ZBwLeZ_CHBJaQ/exec';
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -42,7 +42,7 @@ export default function ContactForm() {
       });
 
       setStatus({ type: 'success', message: 'Thank you! We will contact you soon.' });
-      setFormData({ name: '', email: '', phone: '', landType: 'Residential', message: '' });
+      setFormData({ name: '', email: '', phone: '', landType: '', message: '' });
 
     } catch (error) {
       console.error('Error:', error);
@@ -112,22 +112,37 @@ export default function ContactForm() {
               />
             </div>
 
-            {/* Land Type */}
+            {/* Land Type - RADIO BUTTONS*/}
             <div>
               <label htmlFor="landType" className="block text-sm font-medium text-slate-200 mb-2">
-                Type of Land *
+                Land Type
               </label>
-              <select
-                id="landType"
-                name="landType"
-                required
-                value={formData.landType}
-                onChange={handleChange}
-                className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition"
-                >
-                  <option value="Residential">Residential</option>
-                  <option value="Commercial">Commercial</option>
-                </select>
+              <div className="flex-gap-6">
+                <label className="flex items-center space-x-3 cursor-pointer">
+                  <input
+                    type="radio"
+                    name="landType"
+                    value="Residential"
+                    checked={formData.landType === 'Residential'}
+                    onChange={handleChange}
+                    required
+                    className="w-5 h-5 text-yellow-500 bg-slate-600 focus:ring-yellow-500 focus:ring-2"
+                    />
+                    <span className="text-slate-200 font-medium">Residential</span>
+                </label>
+                <label className="flex items-center space-x-3 cursor-pointer">
+                  <input
+                    type="radio"
+                    name="landType"
+                    value="Commercial"
+                    checked={formData.landType === 'Commercial'}
+                    onChange={handleChange}
+                    required
+                    className="w-5 h-5 text-yellow-500 bg-slate-600 focus:ring-yellow-500 focus:ring-2"
+                    />
+                    <span className="text-slate-200 font-medium">Commercial</span>
+                </label>
+              </div>
               </div>
 
               {/* Message */}
@@ -172,7 +187,7 @@ export default function ContactForm() {
                 {loading ? (
                   <>
                     <div className="w-5 h-5 border-2 border-slate-900 border-t-transparent rounded-full animate-spin">
-                      Sending...
+                      ...
                     </div>
                   </>
                 ) : (
