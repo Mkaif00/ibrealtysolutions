@@ -1,20 +1,10 @@
-// app/components/Footer.tsx
+"use client"
 
 import Link from 'next/link';
 import Image from 'next/image'
 import { Facebook, Twitter, Instagram, Linkedin, Youtube } from 'lucide-react';
 
 export default function Footer() {
-    
-    // Updated Link component usage
-    const FooterLink = ({ href, label }: { href: string, label: string }) => (
-        <li>
-            <Link href={href} className="text-text-gray hover:text-gold transition-colors block py-1">
-                {label}
-            </Link>
-        </li>
-    );
-
     return (
         <footer className="bg-darker-bg pt-16 pb-6 border-t border-gold-dark/50">
             <div className="container">
