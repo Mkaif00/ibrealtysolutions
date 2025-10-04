@@ -3,6 +3,8 @@
 import Link from 'next/link'
 import { Menu, X, Globe } from 'lucide-react'
 import { useState } from 'react'
+import Image from 'next/image'
+import logo from '/image/logo.jpg'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -17,7 +19,13 @@ export default function Navbar() {
   const Logo = () => (
     <div className="flex items-center gap-3">
       <div className="relative w-12 h-12 bg-gradient-to-br from-gold to-gold-light rounded-full flex items-center justify-center overflow-hidden shadow-xl">
-        <span className="text-dark-bg font-bold text-xl font-heading">IB</span>
+        <Image
+          src={logo}
+          alt="IB Realty Logo"
+          width={50}
+          height={50}
+          className="rounded-full"
+        />
       </div>
       <h1 className="text-2xl font-heading bg-gradient-to-r from-gold to-gold-light bg-clip-text text-transparent tracking-wide mb-0">
         IB Realty Solutions Pvt.Ltd.

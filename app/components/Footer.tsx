@@ -30,8 +30,8 @@ export default function Footer() {
                         </h4>
                         <ul className="footer-links space-y-2">
                             {/* Uses the updated FooterLink component */}
-                            <FooterLink href="/plots/residential" label="Residential Plots" />
-                            <FooterLink href="/plots/commercial" label="Commercial Plots" />
+                            <li className="text-text-light hover:text-gold transition-colors">Residential Plots</li>
+                            <li className="text-text-light hover:text-gold transition-colors">Commercial Plots</li>
                             {/* ... other links */}
                         </ul>
                     </div>

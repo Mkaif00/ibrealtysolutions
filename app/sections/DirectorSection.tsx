@@ -5,13 +5,13 @@ export default function DirectorsSection() {
       name: 'Iqbal Khan',
       title: 'Managing Director',
       image: '/image/director-iqbal.jpg',
-      bio: 'Iqbal Khan,Director of IB Realty Solutions Pvt.Ltd. With over 10 Year Experience in real estate devlopment, Iqbal khan brings a visinory approach to creating sustainable and innovative residential and commercial spaces. His leadership has driven the company to new heights of excellence.'
+      bio: 'Iqbal Khan, Director of IB Realty Solutions Pvt.Ltd. With over 10 Year Experience in real estate devlopment, Iqbal khan brings a visinory approach to creating sustainable and innovative residential and commercial spaces. His leadership has driven the company to new heights of excellence.'
     },
     {
       name: 'Syed Basit Ali',
       title: 'Managing Director',
       image: '/image/director-basit.jpg',
-      bio: 'Basit, the Director of IB Realty Solutions Pvt. Ltd., is driven by a clear vision--to make property investment simple,transparent and rewarding for every client. His focus is on creating lasting realtionships with clients by delivering results with honesty and professionalism.'
+      bio: 'Basit, Director of IB Realty Solutions Pvt. Ltd., is driven by a clear vision--to make property investment simple,transparent and rewarding for every client. His focus is on creating lasting realtionships with clients by delivering results with honesty and professionalism.'
     },
   ]
 
