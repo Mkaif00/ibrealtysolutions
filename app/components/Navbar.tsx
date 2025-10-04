@@ -17,12 +17,13 @@ export default function Navbar() {
 
   const Logo = () => (
     <div className="flex items-center gap-3">
-      <div className="relative w-12 h-12 bg-gradient-to-br from-gold to-gold-light rounded-full flex items-center justify-center overflow-hidden shadow-xl">
+      <div className="w-14 h-14">
         <Image
           src="image/logo.jpg"
           alt="IB Realty Logo"
-          width={50}
-          height={50}
+          width={56}
+          height={56}
+          className="w-full h-full object-contain"
         />
       </div>
       <h1 className="text-2xl font-heading bg-gradient-to-r from-gold to-gold-light bg-clip-text text-transparent tracking-wide mb-0">
