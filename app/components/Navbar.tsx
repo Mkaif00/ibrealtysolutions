@@ -23,7 +23,6 @@ export default function Navbar() {
           alt="IB Realty Logo"
           width={50}
           height={50}
-          className="rounded-full"
         />
       </div>
       <h1 className="text-2xl font-heading bg-gradient-to-r from-gold to-gold-light bg-clip-text text-transparent tracking-wide mb-0">
